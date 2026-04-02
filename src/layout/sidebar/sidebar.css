@@ -25,22 +25,107 @@
     color: var(--clr-white);
     text-transform:uppercase ;
 }
-.navigation{
+ .navigation {
     margin-top: 28px;
     height: 600px;
     overflow-y: scroll;
-
-    & ::-webkit-scrollbar{
-        width: 3px;
+  
+    &::-webkit-scrollbar {
+      width: 4px;
     }
-    & ::-webkit-scrollbar-thumb{
-        background-color: var(--clr-bluekin);
-        border-radius: 18px;
+  
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 18px;
     }
-
-    & ::-webkit-scrollbar-track{
-        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        border-radius: 18px;
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--clr-pumpkin);
+      border-radius: 18px;
     }
+  }
+.sidebar-change{
+    margin-left: -260px;
 }
-side
+.nav-items{
+    margin-bottom: 20px;
+    margin-right: 4px;
+}
+.nav-links{
+    display: flex;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 14px;
+    column-gap: 12px;
+    letter-spacing: 0.03em;
+    border: 1px solid transparent;
+    transition: var(--transition-default);
+}
+.nav-links:hover{
+    border: 1px solid var(--clr-primary-light);
+}
+.nav-link.active{
+    background-color: var(--clr-bluekin);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+.nav-link-icon{
+    width: 22px;
+}
+.nav-link-text{
+    text-transform: capitalize;
+    padding: 8px;
+}
+
+  @media screen and (max-width: 1400px) {
+    .sidebar {
+      padding: 24px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      width: 72px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .sidebar-change {
+      margin-left: -72px;
+    }
+    .info-name {
+      display: none;
+    }
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .nav-link {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+    }
+    .nav-link.active {
+      border-radius: 100%;
+    }
+    .nav-link:hover {
+      border-radius: 100%;
+    }
+    .nav-link-text {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .sidebar {
+      margin-left: -72px;
+    }
+    .sidebar-change {
+      margin-left: 0px;
+    }
+  }
