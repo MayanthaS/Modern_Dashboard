@@ -1,5 +1,5 @@
-import { iconsImgs } from "../utils/images";
-import { personsImgs } from "../utils/images";
+import { iconsImgs } from "../utils/image";
+import { personsImgs } from "../utils/image";
 
 export const navigationLinks = [
     { id: 1, title: 'Home', image: iconsImgs.home },
