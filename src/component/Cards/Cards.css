@@ -1,0 +1,102 @@
+.grid-c1 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: linear-gradient(135deg, #0c37ac 0%, #0e42b3 58%, #034ca7 100%);
+  box-shadow: 0 18px 36px rgba(37, 99, 235, 0.24);
+}
+
+.grid-c1-content {
+  background: transparent;
+  flex: 1;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: none;
+}
+
+.grid-c1-content > p:first-child {
+  color: rgba(22, 20, 20, 0.8);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-c1 .lg-value {
+  margin-bottom: 22px;
+  color: var(--clr-white);
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.card-pin-hidden {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-logo-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.expiry-tet {
+  margin-bottom: 6px;
+  color: rgba(219, 234, 254, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.grid-c1 .grid-c-title {
+  margin-bottom: 0;
+}
+
+.grid-c1 .grid-c-title-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.card-logo {
+  position: relative;
+  width: 56px;
+  height: 32px;
+}
+
+.logo-shape1,
+.logo-shape2 {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logo-shape1 {
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo-shape2 {
+  right: 0;
+  background: rgba(191, 219, 254, 0.72);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-c1-content {
+    border-radius: 18px;
+  }
+
+  .card-wrapper {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+}
