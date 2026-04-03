@@ -8,14 +8,14 @@
 
 :root {
   --clr-primary: #1d2129;
-  --clr-primary-light: #5a4f48;
-  --clr-secondary: #1e1611;
+  --clr-primary-light: #48485a;
+  --clr-secondary: #090725;
   --clr-white: #fff;
   --clr-black: #000;
   --clr-bluekin: #0050fe;
   --clr-silver: #a8a5a6;
   --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #0004fe;
+  --clr-scarlet: #030468;
   --clr-scarlet-v1: rgba(0, 38, 254, 0.952);
   --clr-green: #00fe93;
   --clr-blue:#0044fe;

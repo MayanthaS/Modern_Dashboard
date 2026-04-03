@@ -1,0 +1,12 @@
+.main-content {
+  flex: 1;
+  min-width: 0;
+  background: #f5f7fb;
+  padding: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+}
