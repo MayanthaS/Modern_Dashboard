@@ -11,6 +11,24 @@ const Cards = () => {
           <img src={iconsImgs.plus} />
         </button>
       </div>
+      <div className="grid-c1-content">
+        <p>Balance</p>
+        <div className="lg-value">$1,234.56</div>
+        <div className="card-wrapper">
+          <span className="card-pin-hidden">**** **** ****</span>
+          <span>1225</span>
+        </div>
+        <div className="card-logo-wrapper">
+          <div>
+            <p className="text text-silver-v1 expiry-tet">Expiry</p>
+            <p className="text text-sm text-white">12/25</p>
+          </div>
+          <div className="card-logo">
+            <div className="logo-shape1"></div>
+            <div className="logo-shape2"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
