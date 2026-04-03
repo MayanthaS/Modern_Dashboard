@@ -21,7 +21,10 @@ const sidebar = () => {
         <ul className="nav-list">
           {navigationLinks.map((navigationLinks) => (
             <li className="nav-items" key={navigationLinks.id}>
-              <a href="#" className={`nav-link`}>
+              <a
+                href="#"
+                className={`nav-link ${navigationLinks.id === activeLinkIDX ? "active" : ""}`}
+              >
                 <img
                   src={navigationLinks.image}
                   className="nav-link-icon"

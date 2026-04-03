@@ -7,20 +7,20 @@
 }
 
 :root {
-  --clr-primary: #1d2129;
-  --clr-primary-light: #48485a;
-  --clr-secondary: #090725;
+  --clr-primary: #0f172a;
+  --clr-primary-light: #1e3a8a;
+  --clr-secondary: #eaf2ff;
   --clr-white: #fff;
   --clr-black: #000;
-  --clr-bluekin: #0050fe;
-  --clr-silver: #a8a5a6;
-  --clr-silver-v1: #bdbabb;
-  --clr-scarlet: #030468;
-  --clr-scarlet-v1: rgba(0, 38, 254, 0.952);
+  --clr-bluekin: #2563eb;
+  --clr-silver: #94a3b8;
+  --clr-silver-v1: #cbd5e1;
+  --clr-scarlet: #1d4ed8;
+  --clr-scarlet-v1: rgba(37, 99, 235, 0.95);
   --clr-green: #00fe93;
-  --clr-blue:#0044fe;
+  --clr-blue: #60a5fa;
   --clr-yellow: #fec80a;
-  --clr-jet: #302924;
+  --clr-jet: #172554;
   --clr-peach: #ffc397;
   --font-family-bai: "Bai Jamjuree", sans-serif;
   --transition-default: all 300ms ease-in-out;
@@ -28,6 +28,8 @@
 
 body {
   font-family: var(--font-family-bai);
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 45%, #f8fbff 100%);
+  color: var(--clr-primary);
 }
 
 ul {
@@ -73,6 +75,8 @@ button {
 .app {
   display: flex;
   min-height: 100vh;
+  gap: 20px;
+  padding: 20px;
 }
 
 /* commons */
@@ -107,5 +111,17 @@ button {
   }
   body {
     font-size: 14px !important;
+  }
+
+  .app {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    gap: 12px;
+    padding: 12px;
   }
 }
