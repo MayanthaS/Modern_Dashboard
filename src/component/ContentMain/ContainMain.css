@@ -21,6 +21,10 @@
   height: 100%;
 }
 
+.grid-two-item-wide {
+  grid-column: span 2;
+}
+
 @media screen and (max-width: 1200px) {
   .content-grid-one {
     column-gap: 12px;
@@ -41,6 +45,10 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 12px;
   }
+
+  .grid-two-item-wide {
+    grid-column: 1 / -1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -52,5 +60,9 @@
   .content-grid-two {
     grid-template-columns: 1fr;
     row-gap: 12px;
+  }
+
+  .grid-two-item-wide {
+    grid-column: auto;
   }
 }

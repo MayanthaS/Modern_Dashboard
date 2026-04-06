@@ -24,7 +24,7 @@ const ContainMain = () => {
             <Savings />
           </div>
         </div>
-        <div className="grid-two-item">
+        <div className="grid-two-item grid-two-item-wide">
           <div className="subgrid-two">
             <Loan />
             <Financial />
