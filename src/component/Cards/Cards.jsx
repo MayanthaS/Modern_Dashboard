@@ -6,9 +6,9 @@ const Cards = () => {
   return (
     <div className="cards-grid-item grid-common grid-c1">
       <div className="grid-c-title">
-        <h3 className="grid-title">Cards </h3>
+        <h3 className="grid-c-title-text">Cards</h3>
         <button className="grid-c-title-icon">
-          <img src={iconsImgs.plus} />
+          <img src={iconsImgs.plus} alt="" />
         </button>
       </div>
       <div className="grid-c1-content">

@@ -1,0 +1,127 @@
+.grid-c6 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: linear-gradient(180deg, #17347a 0%, #10285f 100%);
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(191, 219, 254, 0.2);
+}
+
+.grid-c6 .grid-c-title {
+  margin-bottom: 0;
+}
+
+.grid-c6 .grid-c-title-text {
+  color: #cbd5e1;
+}
+
+.grid-c6-summary {
+  margin-top: 6px;
+  color: rgba(219, 234, 254, 0.78);
+  font-size: 14px;
+}
+
+.grid-c6 .grid-c-title-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.grid-c6 .grid-c-title-icon img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(122%)
+    hue-rotate(181deg) brightness(117%) contrast(90%);
+}
+
+.grid-c6-content {
+  flex: 1;
+}
+
+.grid-c6 .grid-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid-c6 .grid-item {
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(191, 219, 254, 0.18);
+}
+
+.grid-c6 .grid-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.grid-c6 .grid-item-top-l {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid-c6 .avatar {
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 2px solid rgba(191, 219, 254, 0.2);
+  flex-shrink: 0;
+}
+
+.saving-copy p {
+  color: #eff6ff;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.saving-copy span {
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 14px;
+}
+
+.grid-c6 .grid-item-top-r span {
+  color: #bfdbfe;
+  font-weight: 600;
+}
+
+.grid-c6 .grid-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.grid-c6 .grid-item-badge {
+  color: #dbeafe;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(191, 219, 254, 0.12);
+}
+
+.grid-c6 .grid-item-fill {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(191, 219, 254, 0.18);
+  overflow: hidden;
+}
+
+.grid-c6 .grid-item-fill-value {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-c6 .grid-item-top,
+  .grid-c6 .grid-item-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

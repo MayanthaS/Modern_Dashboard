@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  background: linear-gradient(135deg, #0a33a3 0%, #0e42b3 58%, #034ca7 100%);
-  box-shadow: 0 18px 36px rgba(37, 99, 235, 0.24);
+  background: linear-gradient(180deg, #17347a 0%, #10285f 100%);
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(191, 219, 254, 0.2);
 }
 
 .grid-c1-content {
@@ -15,7 +16,7 @@
 }
 
 .grid-c1-content > p:first-child {
-  color: rgba(22, 20, 20, 0.8);
+  color: #cbd5e1;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -30,7 +31,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 28px;
-  color: rgba(255, 255, 255, 0.92);
+  color: #eff6ff;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -58,11 +59,20 @@
   margin-bottom: 0;
 }
 
+.grid-c1 .grid-c-title-text {
+  color: #cbd5e1;
+}
+
 .grid-c1 .grid-c-title-icon {
   width: 36px;
   height: 36px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.grid-c1 .grid-c-title-icon img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(122%)
+    hue-rotate(181deg) brightness(117%) contrast(90%);
 }
 
 .card-logo {

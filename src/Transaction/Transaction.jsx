@@ -8,7 +8,7 @@ const Transactions = () => {
       <div className="grid-c-title">
         <h3 className="grid-c-title-text">All Transactions</h3>
         <button className="grid-c-title-icon">
-          <img src={iconsImgs.plus} />
+          <img src={iconsImgs.plus} alt="" />
         </button>
       </div>
 
