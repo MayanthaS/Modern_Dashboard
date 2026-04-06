@@ -1,7 +1,7 @@
 import React from "react";
-
+import "./Financial.css";
 const Financial = () => {
-  return <div>Hi</div>;
+  return <div></div>;
 };
 
 export default Financial;

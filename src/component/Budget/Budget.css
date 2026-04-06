@@ -1,0 +1,138 @@
+.grid-c4 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: linear-gradient(180deg, #17347a 0%, #10285f 100%);
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(191, 219, 254, 0.2);
+}
+
+.grid-c4 .grid-c-title {
+  margin-bottom: 0;
+}
+
+.grid-c4 .grid-c-title-text {
+  color: #cbd5e1;
+}
+
+.grid-c4-summary {
+  margin-top: 6px;
+  color: rgba(219, 234, 254, 0.78);
+  font-size: 14px;
+}
+
+.grid-c4 .grid-c-title-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.grid-c4 .grid-c-title-icon img,
+.grid-c4 .icon img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(122%)
+    hue-rotate(181deg) brightness(117%) contrast(90%);
+}
+
+.grid-c4-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(191, 219, 254, 0.18);
+}
+
+.grid-c4-label {
+  margin-bottom: 6px;
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 14px;
+}
+
+.grid-c4 .lg-value {
+  color: #eff6ff;
+}
+
+.grid-c4-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.grid-c4-total span {
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 14px;
+}
+
+.grid-c4-total strong {
+  color: #bfdbfe;
+  font-size: 18px;
+}
+
+.grid-c4-content {
+  flex: 1;
+}
+
+.grid-c4 .grid-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid-c4 .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(191, 219, 254, 0.18);
+}
+
+.grid-c4 .grid-item-l {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid-c4 .icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: rgba(191, 219, 254, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.budget-copy p {
+  color: #eff6ff;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.budget-copy span {
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 14px;
+}
+
+.grid-c4 .grid-item-r span {
+  color: #bfdbfe;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-c4-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid-c4-total {
+    align-items: flex-start;
+  }
+}

@@ -1,1 +1,125 @@
+.grid-c7 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: linear-gradient(180deg, #17347a 0%, #10285f 100%);
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(191, 219, 254, 0.2);
+}
 
+.grid-c7 .grid-c-title {
+  margin-bottom: 0;
+}
+
+.grid-c7 .grid-c-title-text {
+  color: #cbd5e1;
+}
+
+.grid-c7 .grid-c-title-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.grid-c7 .grid-c-title-icon img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(122%)
+    hue-rotate(181deg) brightness(117%) contrast(90%);
+}
+
+.grid-c7-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 4px 4px;
+}
+
+.loan-visual {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+}
+
+.loan-ring {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #17347a 0 54px, transparent 55px),
+    conic-gradient(#38bdf8 0 var(--loan-progress), rgba(255, 255, 255, 0.08) 0);
+  display: grid;
+  place-items: center;
+}
+
+.loan-ring-inner {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background: #10285f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px rgba(191, 219, 254, 0.08);
+}
+
+.loan-ring-value {
+  color: #eff6ff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.loan-ring-label {
+  margin-top: 6px;
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.grid-c7 .data-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid-c7 .data-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(191, 219, 254, 0.18);
+}
+
+.grid-c7 .data-item-text {
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 14px;
+}
+
+.grid-c7 .data-item-value {
+  color: #bfdbfe;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-c7-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .loan-visual {
+    width: 100%;
+  }
+
+  .grid-c7 .data-list {
+    width: 100%;
+  }
+}
