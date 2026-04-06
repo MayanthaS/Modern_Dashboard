@@ -2,35 +2,35 @@ import { iconsImgs } from "../utils/image";
 import { personsImgs } from "../utils/image";
 
 export const navigationLinks = [
-    { id: 1, title: 'Home', image: iconsImgs.home },
-    { id: 2, title: 'Budget', image: iconsImgs.budget },
-    { id: 3, title: 'Transactions', image: iconsImgs.plane },
-    { id: 4, title: 'Subscriptions', image: iconsImgs.wallet },
-    { id: 5, title: 'Loans', image: iconsImgs.bills },
-    { id: 6, title: 'Reports', image: iconsImgs.report },
-    { id: 7, title: 'Savings', image: iconsImgs.wallet },
-    { id: 8, title: 'Financial Advice', image: iconsImgs.wealth },
-    { id: 9, title: 'Account', image: iconsImgs.user },
-    { id: 10, title: 'Settings', image: iconsImgs.gears }
+    { id: 1, title: "Home", image: iconsImgs.home },
+    { id: 2, title: "Budget", image: iconsImgs.budget },
+    { id: 3, title: "Transactions", image: iconsImgs.plane },
+    { id: 4, title: "Subscriptions", image: iconsImgs.wallet },
+    { id: 5, title: "Loans", image: iconsImgs.bills },
+    { id: 6, title: "Reports", image: iconsImgs.report },
+    { id: 7, title: "Savings", image: iconsImgs.wallet },
+    { id: 8, title: "Financial Advice", image: iconsImgs.wealth },
+    { id: 9, title: "Account", image: iconsImgs.user },
+    { id: 10, title: "Settings", image: iconsImgs.gears }
 ];
 
 export const transactions = [
     {
-        id: 11, 
+        id: 11,
         name: "Sarah Parker",
         image: personsImgs.person_four,
         date: "23/12/04",
         amount: 22000
     },
     {
-        id: 12, 
+        id: 12,
         name: "Krisitine Carter",
         image: personsImgs.person_three,
         date: "23/07/21",
         amount: 20000
     },
     {
-        id: 13, 
+        id: 13,
         name: "Irene Doe",
         image: personsImgs.person_two,
         date: "23/08/25",
@@ -73,52 +73,58 @@ export const reportData = [
 
 export const budget = [
     {
-        id: 19, 
+        id: 19,
         title: "Subscriptions",
         type: "Automated",
         amount: 22000
     },
     {
-        id: 20, 
+        id: 20,
         title: "Loan Payment",
         type: "Automated",
         amount: 16000
     },
     {
-        id: 21, 
+        id: 21,
         title: "Foodstuff",
         type: "Automated",
         amount: 20000
     },
     {
-        id: 22, 
-        title: "Subscriptions",
-        type: null,
+        id: 22,
+        title: "Utilities",
+        type: "Automated",
         amount: 10000
     },
     {
-        id: 23, 
-        title: "Subscriptions",
-        type: null,
+        id: 23,
+        title: "Transport",
+        type: "Manual",
         amount: 40000
+    },
+    {
+        id: 24,
+        title: "Health Cover",
+        type: "Manual",
+        amount: 12000
     }
 ];
 
 export const subscriptions = [
     {
-        id: 24,
+        id: 25,
         title: "LinkedIn",
         due_date: "23/12/04",
         amount: 20000
     },
     {
-        id: 25,
+        id: 26,
         title: "Netflix",
         due_date: "23/12/10",
         amount: 5000
     },
     {
-        id: 26,
+        id: 27,
         title: "DSTV",
         due_date: "23/12/22",
         amount: 2000
@@ -127,11 +133,51 @@ export const subscriptions = [
 
 export const savings = [
     {
-        id: 27,
+        id: 28,
         image: personsImgs.person_one,
         saving_amount: 250000,
-        title: "Pay kid bro’s fees",
+        title: "Pay kid bro's fees",
         date_taken: "23/12/22",
         amount_left: 40000
+    },
+    {
+        id: 29,
+        image: personsImgs.person_two,
+        saving_amount: 150000,
+        title: "Emergency reserve",
+        date_taken: "24/01/15",
+        amount_left: 55000
+    },
+    {
+        id: 30,
+        image: personsImgs.person_three,
+        saving_amount: 90000,
+        title: "New work laptop",
+        date_taken: "24/02/01",
+        amount_left: 18000
     }
-]
+];
+
+export const financialGoals = [
+    {
+        id: 31,
+        title: "Emergency Fund",
+        target: 120000,
+        saved: 84000,
+        timeline: "6 months"
+    },
+    {
+        id: 32,
+        title: "Vacation Plan",
+        target: 60000,
+        saved: 25000,
+        timeline: "4 months"
+    },
+    {
+        id: 33,
+        title: "Investment Capital",
+        target: 200000,
+        saved: 120000,
+        timeline: "12 months"
+    }
+];
