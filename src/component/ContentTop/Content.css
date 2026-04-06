@@ -14,8 +14,9 @@
   margin: 18px;
   padding: 22px 24px;
   border-radius: 24px;
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 55%, #60a5fa 100%);
-  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.22);
+  background: linear-gradient(180deg, #17347a 0%, #10285f 100%);
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.24);
+  border: 1px solid rgba(191, 219, 254, 0.2);
 }
 
 .content-top-left {
@@ -29,6 +30,7 @@
   gap: 12px;
   padding: 10px 14px;
   border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
   transition: var(--transition-default);
 }
 
@@ -40,6 +42,8 @@
 .content-top-btn img {
   width: 20px;
   height: 20px;
+  filter: brightness(0) saturate(100%) invert(99%) sepia(16%) saturate(122%)
+    hue-rotate(181deg) brightness(117%) contrast(90%);
 }
 
 .content-top-title {
@@ -61,7 +65,7 @@
   width: 46px;
   height: 46px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.1);
   transition: var(--transition-default);
 }
 
