@@ -17,18 +17,20 @@ const ContainMain = () => {
         <Report />
       </div>
       <div className="content-grid-two">
-        <Budget />
-        <div className="grid-two-item">
-          <div className="subgrid-two">
-            <Subcription />
-            <Savings />
-          </div>
+        <div className="grid-slot grid-slot-budget">
+          <Budget />
         </div>
-        <div className="grid-two-item grid-two-item-wide">
-          <div className="subgrid-two">
-            <Loan />
-            <Financial />
-          </div>
+        <div className="grid-slot grid-slot-subscription">
+          <Subcription />
+        </div>
+        <div className="grid-slot grid-slot-savings">
+          <Savings />
+        </div>
+        <div className="grid-slot grid-slot-loan">
+          <Loan />
+        </div>
+        <div className="grid-slot grid-slot-financial">
+          <Financial />
         </div>
       </div>
     </div>
