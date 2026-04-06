@@ -102,3 +102,7 @@ npm run preview
 ## Author
 
 Created as a modern finance dashboard practice project.
+<img width="1917" height="957" alt="Screenshot 2026-04-06 190632" src="https://github.com/user-attachments/assets/f774f889-f2a8-4feb-81d1-ea2940ddd517" />
+<img width="1905" height="888" alt="Screenshot 2026-04-06 190711" src="https://github.com/user-attachments/assets/6228234d-67bb-4a94-be20-01e478e89239" />
+
+
